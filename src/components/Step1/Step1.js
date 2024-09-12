@@ -1,10 +1,17 @@
 import React from 'react';
 
-const Step1 = () => {
+const Step1 = ({formData, handleChange}) => {
     return (
         <div>
             <h2>Step 1</h2>
-            <p>Content for page 1.</p>
+            <label htmlFor="name">
+                <input type="text"
+                       className="form-control-lg"
+                       name="name"
+                       placeholder="Please enter your name"
+                       value={formData.name || ''}
+                       onChange={handleChange} />
+            </label>
         </div>
     );
 };
