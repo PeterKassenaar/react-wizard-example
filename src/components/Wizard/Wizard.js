@@ -74,7 +74,7 @@ const Wizard = () => {
                         onClick={nextStep}>Next</button>
                 }
                 {step === 3 &&
-                    <button className="btn bg-primary float-end"
+                    <button className="btn bg-success float-end"
                             onClick={handleSubmit}>Submit!</button>
                 }
             </div>
