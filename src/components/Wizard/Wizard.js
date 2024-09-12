@@ -10,6 +10,7 @@ const Wizard = () => {
     // Form data in the wizard
     const [formData, setFormData] = React.useState({});
 
+    // Update the state when form data has changed in the various steps
     const handleChange = (event) => {
         // use destructuring to get the name and value for the current field from the event.
         const {name, value} = event.target;
